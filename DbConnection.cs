@@ -14,8 +14,8 @@ namespace sportakip_application
            "server=gateway01.eu-central-1.prod.aws.tidbcloud.com;" +
            "port=4000;" +
            "user=2cX2FJsjpRzShSZ.root;" +
-           "password=PvoI9zd5WpUYvRCD;" +
-           "database=sport_tracking_db;" +
+           "password=PvoI9zd5WpUYvRCD ;" +
+           "database=sys;" +
            "SslMode=Required;";
 
         public MySqlConnection GetConnection()
