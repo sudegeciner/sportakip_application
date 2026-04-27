@@ -19,7 +19,12 @@ namespace sportakip_application
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            DbConnection db = new DbConnection();
 
+            if (db.TestConnection())
+                MessageBox.Show("BAĞLANTI BAŞARILI 🚀");
+            else
+                MessageBox.Show("BAĞLANTI BAŞARISIZ ❌");
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
